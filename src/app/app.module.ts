@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TempleteModule } from './templete/templete.module';
 import { HomeComponent } from './home/home.component';
 import { UsuarioModule } from './usuario/usuario.module';
+import { EmprestimoModule } from './emprestimo/emprestimo.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UsuarioModule } from './usuario/usuario.module';
     BrowserModule,
     AppRoutingModule,
     TempleteModule,
-    UsuarioModule
+    UsuarioModule,
+    EmprestimoModule
 
   ],
   providers: [],

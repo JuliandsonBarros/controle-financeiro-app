@@ -2,19 +2,19 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading">Core</div>
+                <div class="sb-sidenav-menu-heading"></div>
                 <a class="nav-link" routerLink="/home"
                     ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Home</a
                 >
                 <div class="sb-sidenav-menu-heading">Cadastros</div>
-                <a class="nav-link collapsed" routerLink="/usuario-form" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
+                <a class="nav-link collapsed" href="#"  data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
                     ><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Clientes
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                 ></a>
                 <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="layout-static.html">Buscar Cliente</a><a class="nav-link" href="layout-sidenav-light.html">Cadastrar Cliente</a></nav>
+                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" routerLink="/usuario-read">Pesquisar</a><a class="nav-link" routerLink="/usuario-form">Cadastrar</a></nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages"
                     ><div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
@@ -22,7 +22,7 @@
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                 ></a>
                 <div class="collapse" id="collapsePages" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="layout-static.html">Buscar Empréstimos</a><a class="nav-link" href="layout-sidenav-light.html">Cadastrar Empréstimo</a></nav>
+                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" routerLink="/emprestimo-read">Pesquisar</a><a class="nav-link" routerLink="/emprestimo-form">Cadastrar novo empréstimo</a></nav>
                 </div>
             </div>
         </div>
