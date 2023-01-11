@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UsuarioRoutingModule } from './usuario-routing.module';
 import { UsuarioFormComponent } from './usuario-form/usuario-form.component';
 import { UsuarioReadComponent } from './usuario-read/usuario-read.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { UsuarioReadComponent } from './usuario-read/usuario-read.component';
   ],
   imports: [
     CommonModule,
-    UsuarioRoutingModule
+    UsuarioRoutingModule,
+    FormsModule
   ]
 })
 export class UsuarioModule { }
