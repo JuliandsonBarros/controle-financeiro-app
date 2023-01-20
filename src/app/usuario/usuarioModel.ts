@@ -4,5 +4,5 @@ export class Usuario{
     cod_cpf?: string;
     cod_telefone?: string;
     nom_email?: string;
-    perfil?: string;
+    perfil?: number;
 }

@@ -5,18 +5,28 @@
 <div class="container">
     <form #usuarioForm="ngForm" (ngSubmit)="onSubmit()">
         <div class="row">
+            <div class="col md 12">
+                <div class="alert alert-success" role="alert" *ngIf="success == true">
+                    Usuário salvo/atualizado com sucesso!
+                  </div> 
+                  <div class="alert alert-danger" role="alert" *ngFor="let erro of erros">
+                    {{ erro }}
+                  </div> 
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Nome:*</label>
                     <input type="text" class="form-control"
-                             [(ngModel)]="usuario.nom_usuario" nome="nom_usuario">
+                         [(ngModel)]="usuario.nom_usuario" [ngModelOptions]="{standalone: true}">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">CPF:*</label>
-                    <input type="text"  [(ngModel)]="usuario. cod_cpf" 
-                             class="form-control" nome="cod_cpf">
+                    <input type="text" class="form-control"
+                        [(ngModel)]="usuario. cod_cpf" [ngModelOptions]="{standalone: true}">
                 </div>
             </div>
         </div>
@@ -25,14 +35,14 @@
                 <div class="form-group">
                     <label for="">Telefone:</label>
                     <input type="text" class="form-control"
-                            [(ngModel)]="usuario.cod_telefone" nome="cod_telefone">
+                        [(ngModel)]="usuario.cod_telefone" [ngModelOptions]="{standalone: true}">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Email:</label>
                     <input type="text" class="form-control"
-                             [(ngModel)]="usuario.nom_email" nome="nom_email">
+                         [(ngModel)]="usuario.nom_email" [ngModelOptions]="{standalone: true}">
                 </div>
             </div>
         </div>
