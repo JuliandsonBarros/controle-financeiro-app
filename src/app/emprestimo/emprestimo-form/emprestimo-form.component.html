@@ -18,8 +18,8 @@
              <div class="col-md-6">
                 <div class="form-group">
                     <label>Nome:</label>
-                    <select [compareWith]="compareObjects" [(ngModel)]="emprestimo.usuario" name="usuario">
-                    <option *ngFor="let usuario of clientes" [value]="usuario">
+                    <select [compareWith]="compareObjects" [(ngModel)]="emprestimo.usuario.id_usuario" name="usuario">
+                    <option *ngFor="let usuario of clientes" [value]="usuario.id_usuario">
                         {{ usuario.nom_usuario }}
                     </option>
                     </select>

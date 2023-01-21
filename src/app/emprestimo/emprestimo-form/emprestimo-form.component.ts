@@ -14,7 +14,7 @@ export class EmprestimoFormComponent implements OnInit{
   emprestimo = new Emprestimo();
   success: boolean = false;
   erros : String[] = [];
-  clientes : Usuario[] = []
+  clientes : Usuario[] = [];
 
 
   constructor(private emprestimoService : EmprestimoService,
@@ -24,6 +24,7 @@ export class EmprestimoFormComponent implements OnInit{
   ngOnInit(): void {
     this.usuarioService.read().subscribe(usuarios => {
       this.clientes = usuarios;
+      console.log(this.clientes)
     })
    }
 
