@@ -5,5 +5,5 @@ export class Emprestimo{
     dta_emprestimo?: Date;
     cod_numeroParcelas? : number;
     cod_taxaJuros? : number;
-    usuario? : Usuario;
+    usuario = new Usuario;
 }
