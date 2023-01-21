@@ -21,5 +21,4 @@ export class UsuarioService implements OnInit{
   read(): Observable<Usuario[]>{
     return this.http.get<Usuario[]>(this.baseUrl);
   }
-
 }

@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { Usuario } from './../usuario/usuarioModel';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,7 +15,8 @@ import { EmprestimoReadComponent } from './emprestimo-read/emprestimo-read.compo
   ],
   imports: [
     CommonModule,
-    EmprestimoRoutingModule
+    EmprestimoRoutingModule,
+    FormsModule
   ]
 })
 export class EmprestimoModule { }
