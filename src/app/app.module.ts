@@ -1,3 +1,4 @@
+import { EmprestimoService } from './emprestimo.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,7 +25,8 @@ import { UsuarioService } from './usuario.service';
     EmprestimoModule
   ],
   providers: [
-    UsuarioService
+    UsuarioService,
+    EmprestimoService
   ],
   bootstrap: [AppComponent]
 })
