@@ -18,6 +18,7 @@ export class UsuarioService implements OnInit{
   salvar(usuario: Usuario): Observable<Usuario> {
     return this.http.post<Usuario>(this.baseUrl, usuario);
   }
+  
   read(): Observable<Usuario[]>{
     return this.http.get<Usuario[]>(this.baseUrl);
   }

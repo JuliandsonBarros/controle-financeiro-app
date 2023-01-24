@@ -10,11 +10,12 @@ import { HomeComponent } from './home/home.component';
 import { UsuarioModule } from './usuario/usuario.module';
 import { EmprestimoModule } from './emprestimo/emprestimo.module';
 import { UsuarioService } from './usuario.service';
+import { PesquisarPipe } from './pesquisar.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,11 +23,12 @@ import { UsuarioService } from './usuario.service';
     AppRoutingModule,
     TempleteModule,
     UsuarioModule,
-    EmprestimoModule
+    EmprestimoModule,
   ],
   providers: [
     UsuarioService,
-    EmprestimoService
+    EmprestimoService,
+    PesquisarPipe
   ],
   bootstrap: [AppComponent]
 })

@@ -1,1 +1,37 @@
-<h1>Pesquisar Cliente</h1>
+<h1 class="mt-4">Clientes</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Consulta</li>
+</ol>
+<div class="container">
+    <div class="row">
+        <div class="md-col-12">
+            <div>
+                <button class="btn btn-warning" routerLink="/usuario-form">
+                    <i class="fa fa-plus"></i> Novo Cliente
+                </button>
+                <input class="form-control" type="text" placeholder="Buscar Cliente" [(ngModel)]="pesquisarTexto" >
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col md 12">
+         <table class="table table-condensad table-hover" id="#myTable">
+            <thead>
+                <th>Nome:</th>
+                <th>CPF:</th>
+                <th>Telefone:</th>
+                <th>Email:</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios | pesquisar: pesquisarTexto"> 
+                    <td>{{ usuario.nom_usuario }}</td>
+                    <td>{{ usuario.cod_cpf }}</td>
+                    <td> {{ usuario.cod_telefone }}</td>
+                    <td>{{ usuario.nom_email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
