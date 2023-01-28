@@ -1,6 +1,6 @@
-<h1 class="mt-4">Bem vindo</h1>
+<h1 class="mt-4">CLiente</h1>
 <ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active">Cadastrar novo cliente</li>
+    <li class="breadcrumb-item active">{{ usuario.id_usuario ? 'Atualizar cadastro' : 'Cadastrar' }}</li>
 </ol>
 <div class="container">
     <form #usuarioForm="ngForm" (ngSubmit)="onSubmit()">
@@ -47,9 +47,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col md 2">
-                <button type="submit" class="btn btn-success">
-                    <i class="fa fa-save"></i>Salvar
+            <div class="col md 3">
+                <button type="submit" id="" class="btn btn-success" *ngIf="!usuario.id_usuario">
+                    <i class="fa fa-save"></i> Salvar
+                </button>
+                <button type="submit" id="" class="btn btn-primary" *ngIf="usuario.id_usuario">
+                    <i class="fa fa-sync-alt"></i> Atualizar
+                </button>
+                  <button type="button" class="btn btn-danger ml-1" (click)="voltarListagem()">
+                    <i class="fa fa-arrow-left"></i> Voltar
                 </button>
             </div>
         </div>

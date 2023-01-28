@@ -5,6 +5,7 @@ import { UsuarioReadComponent } from './usuario-read/usuario-read.component';
 
 const routes: Routes = [
   { path : 'usuario-form', component : UsuarioFormComponent },
+  { path : 'usuario-form/:id', component : UsuarioFormComponent },
   { path : 'usuario-read', component : UsuarioReadComponent}
 ];
 
