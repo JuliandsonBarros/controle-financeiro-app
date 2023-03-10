@@ -33,7 +33,7 @@ export class UsuarioFormComponent implements OnInit{
   }
 
   voltarListagem(){
-    this.router.navigate(['/usuario-read']);
+    this.router.navigate(['/usuario/read']);
   }
 
   onSubmit(){

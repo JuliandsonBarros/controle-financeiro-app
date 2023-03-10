@@ -11,19 +11,26 @@ import { UsuarioModule } from './usuario/usuario.module';
 import { EmprestimoModule } from './emprestimo/emprestimo.module';
 import { UsuarioService } from './usuario.service';
 import { PesquisarPipe } from './pesquisar.pipe';
+import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
+import { FormsModule } from '@angular/forms';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    AutenticacaoComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule,
     TempleteModule,
     UsuarioModule,
-    EmprestimoModule,
+    EmprestimoModule
+   
   ],
   providers: [
     UsuarioService,

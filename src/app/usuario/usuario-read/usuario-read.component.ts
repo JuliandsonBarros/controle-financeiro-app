@@ -26,7 +26,7 @@ export class UsuarioReadComponent implements OnInit {
   }
 
   novaConsulta(){
-    this.router.navigate(['/usuario-form']);  
+    this.router.navigate(['/usuario/form']);  
   }
 
   preparaDelecao(usuario: Usuario){
@@ -39,6 +39,7 @@ export class UsuarioReadComponent implements OnInit {
       .subscribe(resposta => 
           this.mensagemSucesso = 'Cliente deletado com sucesso!',
           erro => this.mensagemErro = 'Ocorreu um erro ao deletar Cliente!'
+          
       )
   }
 
